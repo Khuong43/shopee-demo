@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +21,8 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
                             Tải ứng dụng
@@ -195,6 +197,10 @@
 
                 <!-- Header with search -->
                 <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
                     <div class="header__logo">
                         <a href="#" class="header_logo-link">
                             <svg class="header__logo-img" viewBox="0 0 192 65">
@@ -208,9 +214,11 @@
                         </a>
                     </div>
 
+
+                    <input type="checkbox" name="" id="mobile-search-checkbox" class="header__search-checkbox">
                     <div class="header__search">
                         <div class="header__search-input-wrap">
-                            <input type="text" class="header__search-input" placeholder="Nhập vào để tìm kiếm sản phẩm!">
+                            <input type="text" class="header__search-input" placeholder="Nhập vào để tìm kiếm sản phẩm">
                             <!-- Search History -->
                             <div class="header__search-history">
                                 <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
@@ -252,7 +260,7 @@
                         <button class="header__search-btn">
                             <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
-                        <div class="header__suggest">
+                        <div class="header__suggest hide-on-mobile-tablet hide-on-pclow">
                             <ul class="header__list">
                                 <li class="header__item">
                                     <a href="" class="header__item-link">Ốp</a>
@@ -392,82 +400,6 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="header_cart-item">
-                                        <img src="https://img.upanh.tv/2022/12/08/1.1.jpg" alt="" class="header_cart-img">
-                                        <div class="header_cart-item-info">
-                                            <div class="header_cart-item-head">
-                                                <h5 class="header_cart-item-name">Son kem Black Rouge</h5>
-                                                <div class="header_cart-item-price-wrap">
-                                                    <span class="header_cart-item-price">799.000</span>
-                                                    <span class="header_cart-item-multiply">x</span>
-                                                    <span class="header_cart-item-qnt">1</span>
-                                                </div>
-                                            </div>
-                                            <div class="header_cart-item-body">
-                                                <span class="header_cart-item-description">
-                                                    Tạo nên sự quyến rũ từ đôi môi
-                                                </span>
-                                                <span class="header_cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header_cart-item">
-                                        <img src="https://img.upanh.tv/2022/12/08/1.1.jpg" alt="" class="header_cart-img">
-                                        <div class="header_cart-item-info">
-                                            <div class="header_cart-item-head">
-                                                <h5 class="header_cart-item-name">Son kem Black Rouge</h5>
-                                                <div class="header_cart-item-price-wrap">
-                                                    <span class="header_cart-item-price">799.000</span>
-                                                    <span class="header_cart-item-multiply">x</span>
-                                                    <span class="header_cart-item-qnt">1</span>
-                                                </div>
-                                            </div>
-                                            <div class="header_cart-item-body">
-                                                <span class="header_cart-item-description">
-                                                    Tạo nên sự quyến rũ từ đôi môi
-                                                </span>
-                                                <span class="header_cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header_cart-item">
-                                        <img src="https://img.upanh.tv/2022/12/08/1.1.jpg" alt="" class="header_cart-img">
-                                        <div class="header_cart-item-info">
-                                            <div class="header_cart-item-head">
-                                                <h5 class="header_cart-item-name">Son kem Black Rouge</h5>
-                                                <div class="header_cart-item-price-wrap">
-                                                    <span class="header_cart-item-price">799.000</span>
-                                                    <span class="header_cart-item-multiply">x</span>
-                                                    <span class="header_cart-item-qnt">1</span>
-                                                </div>
-                                            </div>
-                                            <div class="header_cart-item-body">
-                                                <span class="header_cart-item-description">
-                                                    Tạo nên sự quyến rũ từ đôi môi
-                                                </span>
-                                                <span class="header_cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header_cart-item">
-                                        <img src="https://img.upanh.tv/2022/12/08/1.1.jpg" alt="" class="header_cart-img">
-                                        <div class="header_cart-item-info">
-                                            <div class="header_cart-item-head">
-                                                <h5 class="header_cart-item-name">Son kem Black Rouge</h5>
-                                                <div class="header_cart-item-price-wrap">
-                                                    <span class="header_cart-item-price">799.000</span>
-                                                    <span class="header_cart-item-multiply">x</span>
-                                                    <span class="header_cart-item-qnt">1</span>
-                                                </div>
-                                            </div>
-                                            <div class="header_cart-item-body">
-                                                <span class="header_cart-item-description">
-                                                    Tạo nên sự quyến rũ từ đôi môi
-                                                </span>
-                                                <span class="header_cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
                                 </ul>
 
                                 <a href="#" class="header_cart-view-cart btn btn--primary">Xem giỏ hàng</a>
@@ -478,12 +410,26 @@
 
                 <!-- Header with  -->
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active header__sort-item--select">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="app__container">
-            <div class="grid">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+            <div class="grid wide">
+                <div class="row app__content">
+                    <div class="col pc-2 t-0 m-0">
                         <nav class="category">
                             <h3 class="category__heading">Danh mục</h3>
                             <ul class="category-list">
@@ -560,9 +506,9 @@
                         </nav>
                     </div>
     
-                    <div class="grid__column-10">
+                    <div class="col pc-10 t-12 m-12">
                         <!-- Select option -->
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="btn home-filter__btn">Phổ biến</button>
                             <button class="btn home-filter__btn btn--primary">Mới nhất</button>
@@ -597,10 +543,44 @@
                             </div>
                         </div>
 
+
+                        <!-- Mobile category -->
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Trang điểm mặt</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Điện thoại</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Laptop</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Vệ sinh cá nhân</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Đồ dùng học tập</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Đồ điện tử</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Bánh kẹo</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Bánh kẹo</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Đa dụng</a>
+                                </li>
+                            </ul>
+                        </nav>
+
                         <!-- Product -->
                         <div class="home-product">
-                            <div class="grid__row">
-                                <div class="grid__column-2-4">
+                            <div class="row ">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -642,7 +622,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -684,7 +664,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -726,7 +706,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -768,7 +748,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -810,7 +790,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -852,7 +832,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -894,7 +874,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -936,7 +916,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -978,7 +958,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col sm-gutter pc-2-4 t-4 m-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(&quot;https://product.hstatic.net/1000283605/product/tui-xach-nu__1__f2365e646f6a4c4a8b4286e2b6574114_master.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>
@@ -1065,9 +1045,9 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col pc-2 t-4 m-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -1082,7 +1062,7 @@
                             
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col pc-2 t-4 m-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -1096,7 +1076,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col pc-2 t-4 m-6">
                         <h3 class="footer__heading">Danh mục</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -1110,7 +1090,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col pc-2 t-4 m-6">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -1133,7 +1113,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col pc-2 t-8 m-12">
                         <h3 class="footer__heading">Tải ứng dụng trên Shopee</h3>
                         <ul class="footer__list">
                             <div class="footer__download">
@@ -1152,7 +1132,7 @@
                 </div>
             </div>
             <div class="footer__policy">
-                <div class="grid">
+                <div class="grid wide">
                     <p class="footer__text">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
                 </div>
             </div>
